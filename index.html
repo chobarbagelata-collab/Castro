@@ -192,8 +192,14 @@ p.desc{color:var(--muted);font-size:14.5px;margin:0 0 22px;max-width:640px;}
       <div class="flight-head">
         <span class="badge">✈ Internacional · EZE ⇄ JFK</span>
       </div>
-      <div class="tag-row" style="margin:-4px 0 14px;"><span class="tag">LATAM</span><span class="tag">Escala en SCL (2h)</span></div>
       
+      <p class="select-hint" style="margin-top:-4px;">Elegí la opción que prefieras — el resumen de precios se actualiza automáticamente.</p>
+      <div class="hotel-grid fare-grid" style="grid-template-columns:1fr;">
+      <div class="hotel-card selectable selected" data-fare-price="1260" onclick="selectHotel(this)">
+        <div class="hotel-body" style="padding-top:18px;">
+          <div class="select-row"><span class="radio-dot"></span><span class="select-text">Elegir esta opción</span></div>
+          <div style="font-weight:700;font-size:14.5px;margin-bottom:2px;color:var(--navy);">LATAM · Mochila + Carry-on + Maleta 23kg</div>
+          <div class="tag-row"><span class="tag">LATAM</span><span class="tag">Escala en SCL (2h)</span><span class="tag">Mochila + Carry-on + Maleta 23kg</span></div>
       <div class="label" style="">Ida · 13 de septiembre</div>
       <div class="options-row" style="margin-top:6px;">
         <span class="time-chip">Salida 19:21 → Llegada 09:40 (14 sept)</span>
@@ -204,27 +210,29 @@ p.desc{color:var(--muted);font-size:14.5px;margin:0 0 22px;max-width:640px;}
         <span class="time-chip">Salida 19:50 → Llegada 11:30 (21 sept)</span>
       </div>
       <div class="route-line"><span>Nueva York (JFK)</span><span class="dash"></span><span>Buenos Aires (EZE)</span></div>
-      <div class="label" style="margin-top:18px;">Elegí tu tarifa</div>
-      <p class="select-hint" style="margin-top:2px;">El resumen de precios se actualiza automáticamente.</p>
-      <div class="hotel-grid fare-grid">
-      <div class="hotel-card selectable selected" data-fare-price="1060" onclick="selectHotel(this)">
-        <div class="hotel-body" style="padding-top:18px;">
-          <div class="select-row"><span class="radio-dot"></span><span class="select-text">Elegir esta tarifa</span></div>
-          <div style="font-weight:700;font-size:14.5px;margin-bottom:8px;color:var(--navy);">Mochila + Carry-on</div>
-          <div class="tag-row"><span class="tag">Mochila</span><span class="tag">Carry-on</span></div>
         </div>
-      </div>      <div class="hotel-card selectable" data-fare-price="1260" onclick="selectHotel(this)">
+      </div>      <div class="hotel-card selectable" data-fare-price="1650" onclick="selectHotel(this)">
         <div class="hotel-body" style="padding-top:18px;">
-          <div class="select-row"><span class="radio-dot"></span><span class="select-text">Elegir esta tarifa</span></div>
-          <div style="font-weight:700;font-size:14.5px;margin-bottom:8px;color:var(--navy);">Mochila + Carry-on + Maleta 23kg</div>
-          <div class="tag-row"><span class="tag">Mochila</span><span class="tag">Carry-on</span><span class="tag">Maleta facturada 23kg</span></div>
+          <div class="select-row"><span class="radio-dot"></span><span class="select-text">Elegir esta opción</span></div>
+          <div style="font-weight:700;font-size:14.5px;margin-bottom:2px;color:var(--navy);">American Airlines · Directo</div>
+          <div class="tag-row"><span class="tag">American Airlines</span><span class="tag">Vuelo directo</span><span class="tag">Carry-on + Maleta facturada</span></div>
+      <div class="label" style="">Ida · 13 de septiembre</div>
+      <div class="options-row" style="margin-top:6px;">
+        <span class="time-chip">Salida 21:15 → Llegada 06:59 (14 sept)</span>
+      </div>
+      <div class="route-line"><span>Buenos Aires (EZE)</span><span class="dash"></span><span>Nueva York (JFK)</span></div>
+      <div class="label" style="margin-top:16px;">Vuelta · 20 de septiembre</div>
+      <div class="options-row" style="margin-top:6px;">
+        <span class="time-chip">Salida 23:20 → Llegada 11:05 (21 sept)</span>
+      </div>
+      <div class="route-line"><span>Nueva York (JFK)</span><span class="dash"></span><span>Buenos Aires (EZE)</span></div>
         </div>
       </div>
       </div>
     </div>
   </section>
 
-  <section id="notas" style="margin-bottom:24px;"><div class="note">El precio del pasaje varía según el equipaje seleccionado — elegí la tarifa que prefieras en la sección Vuelos.</div></section>
+  <section id="notas" style="margin-bottom:24px;"><div class="note">El precio y el horario del vuelo varían según la opción seleccionada — elegí la que prefieras en la sección Vuelos.</div></section>
 
   <section id="resumen">
     <div class="kicker"></div>
@@ -233,12 +241,12 @@ p.desc{color:var(--muted);font-size:14.5px;margin:0 0 22px;max-width:640px;}
     <div class="total-box">
       <div class="total-col">
         <span class="t-label">Estimado por pasajero</span>
-        <span class="t-value" id="totalValue">USD 1.060</span>
+        <span class="t-value" id="totalValue">USD 1.260</span>
       </div>
       <div class="total-divider"></div>
       <div class="total-col">
         <span class="t-label">Total (1 pasajeros)</span>
-        <span class="t-value" id="totalGroupValue">USD 1.060</span>
+        <span class="t-value" id="totalGroupValue">USD 1.260</span>
       </div>
     </div>
   </section>
