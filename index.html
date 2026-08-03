@@ -146,7 +146,7 @@ p.desc{color:var(--muted);font-size:14.5px;margin:0 0 22px;max-width:640px;}
     <h1>Nueva York</h1>
     <div class="sub">Buenos Aires ⇄ Nueva York</div>
     <div class="pillrow">
-      <span class="pill">📅 13 Sept 2026 → 20 Sept 2026</span><span class="pill">🌙 7 noches</span><span class="pill">👤 Base 1 pasajeros</span>
+      <span class="pill">📅 11 Sept 2026 → 18 Sept 2026</span><span class="pill">🌙 7 noches</span><span class="pill">👤 Base 1 pasajeros</span>
     </div>
   </div>
 </div>
@@ -165,20 +165,20 @@ p.desc{color:var(--muted);font-size:14.5px;margin:0 0 22px;max-width:640px;}
       <div class="timeline">
         <div class="t-item">
           <div class="t-day">Día 1</div>
-          <div class="t-date">13 de septiembre</div>
-          <div class="t-detail">Salida desde Buenos Aires (EZE) 19:21 hs. Escala en Santiago de Chile (SCL, 2 hs).</div>
+          <div class="t-date">11 de septiembre</div>
+          <div class="t-detail">Salida desde Buenos Aires (EZE) 14:49 hs. Escala en Panamá (PTY).</div>
         </div>        <div class="t-item">
           <div class="t-day">Día 2</div>
-          <div class="t-date">14 de septiembre</div>
-          <div class="t-detail">Llegada a Nueva York (JFK) 09:40 hs.</div>
-        </div>        <div class="t-item">
-          <div class="t-day">Día 7</div>
-          <div class="t-date">20 de septiembre</div>
-          <div class="t-detail">Salida desde Nueva York (JFK) 19:50 hs.</div>
+          <div class="t-date">12 de septiembre</div>
+          <div class="t-detail">Llegada a Nueva York (JFK) 03:59 hs.</div>
         </div>        <div class="t-item">
           <div class="t-day">Día 8</div>
-          <div class="t-date">21 de septiembre</div>
-          <div class="t-detail">Llegada a Buenos Aires (EZE) 11:30 hs.</div>
+          <div class="t-date">18 de septiembre</div>
+          <div class="t-detail">Salida desde Nueva York (JFK) 15:32 hs.</div>
+        </div>        <div class="t-item">
+          <div class="t-day">Día 9</div>
+          <div class="t-date">19 de septiembre</div>
+          <div class="t-detail">Llegada a Buenos Aires (EZE) 07:57 hs.</div>
         </div>
       </div>
     </div>
@@ -195,35 +195,67 @@ p.desc{color:var(--muted);font-size:14.5px;margin:0 0 22px;max-width:640px;}
       
       <p class="select-hint" style="margin-top:-4px;">Elegí la opción que prefieras — el resumen de precios se actualiza automáticamente.</p>
       <div class="hotel-grid fare-grid" style="grid-template-columns:1fr;">
-      <div class="hotel-card selectable selected" data-fare-price="1260" onclick="selectHotel(this)">
+      <div class="hotel-card selectable selected" data-fare-price="1250" onclick="selectHotel(this)">
         <div class="hotel-body" style="padding-top:18px;">
           <div class="select-row"><span class="radio-dot"></span><span class="select-text">Elegir esta opción</span></div>
-          <div style="font-weight:700;font-size:14.5px;margin-bottom:2px;color:var(--navy);">LATAM · Mochila + Carry-on + Maleta 23kg</div>
-          <div class="tag-row"><span class="tag">LATAM</span><span class="tag">Escala en SCL (2h)</span><span class="tag">Mochila + Carry-on + Maleta 23kg</span></div>
-      <div class="label" style="">Ida · 13 de septiembre</div>
+          <div style="font-weight:700;font-size:14.5px;margin-bottom:2px;color:var(--navy);">Copa Airlines · Carry-on + Maleta facturada</div>
+          <div class="tag-row"><span class="tag">Copa Airlines</span><span class="tag">Escala en Panamá (PTY)</span><span class="tag">Carry-on + Maleta facturada</span></div>
+      <div class="label" style="">Ida · 11 de septiembre</div>
       <div class="options-row" style="margin-top:6px;">
-        <span class="time-chip">Salida 19:21 → Llegada 09:40 (14 sept)</span>
+        <span class="time-chip">Salida 14:49 → Llegada 03:59 (12 sept)</span>
       </div>
       <div class="route-line"><span>Buenos Aires (EZE)</span><span class="dash"></span><span>Nueva York (JFK)</span></div>
-      <div class="label" style="margin-top:16px;">Vuelta · 20 de septiembre</div>
+      <div class="label" style="margin-top:16px;">Vuelta · 18 de septiembre</div>
       <div class="options-row" style="margin-top:6px;">
-        <span class="time-chip">Salida 19:50 → Llegada 11:30 (21 sept)</span>
+        <span class="time-chip">Salida 15:32 → Llegada 07:57 (19 sept)</span>
       </div>
       <div class="route-line"><span>Nueva York (JFK)</span><span class="dash"></span><span>Buenos Aires (EZE)</span></div>
         </div>
-      </div>      <div class="hotel-card selectable" data-fare-price="1650" onclick="selectHotel(this)">
+      </div>      <div class="hotel-card selectable" data-fare-price="1390" onclick="selectHotel(this)">
+        <div class="hotel-body" style="padding-top:18px;">
+          <div class="select-row"><span class="radio-dot"></span><span class="select-text">Elegir esta opción</span></div>
+          <div style="font-weight:700;font-size:14.5px;margin-bottom:2px;color:var(--navy);">Copa Airlines · Carry-on + Maleta facturada</div>
+          <div class="tag-row"><span class="tag">Copa Airlines</span><span class="tag">Escala en Panamá (PTY)</span><span class="tag">Carry-on + Maleta facturada</span></div>
+      <div class="label" style="">Ida · 11 de septiembre</div>
+      <div class="options-row" style="margin-top:6px;">
+        <span class="time-chip">Salida 14:49 → Llegada 03:59 (12 sept)</span>
+      </div>
+      <div class="route-line"><span>Buenos Aires (EZE)</span><span class="dash"></span><span>Nueva York (JFK)</span></div>
+      <div class="label" style="margin-top:16px;">Vuelta · 18 de septiembre</div>
+      <div class="options-row" style="margin-top:6px;">
+        <span class="time-chip">Salida 15:32 → Llegada 07:57 (19 sept)</span>
+      </div>
+      <div class="route-line"><span>Nueva York (JFK)</span><span class="dash"></span><span>Buenos Aires (EZE)</span></div>
+        </div>
+      </div>      <div class="hotel-card selectable" data-fare-price="1470" onclick="selectHotel(this)">
+        <div class="hotel-body" style="padding-top:18px;">
+          <div class="select-row"><span class="radio-dot"></span><span class="select-text">Elegir esta opción</span></div>
+          <div style="font-weight:700;font-size:14.5px;margin-bottom:2px;color:var(--navy);">LATAM · Carry-on + Maleta facturada</div>
+          <div class="tag-row"><span class="tag">LATAM</span><span class="tag">Escala en LIM / SCL</span><span class="tag">Carry-on + Maleta facturada</span></div>
+      <div class="label" style="">Ida · 11 de septiembre</div>
+      <div class="options-row" style="margin-top:6px;">
+        <span class="time-chip">Salida 07:35 → Llegada 21:10</span>
+      </div>
+      <div class="route-line"><span>Buenos Aires (EZE)</span><span class="dash"></span><span>Nueva York (JFK)</span></div>
+      <div class="label" style="margin-top:16px;">Vuelta · 18 de septiembre</div>
+      <div class="options-row" style="margin-top:6px;">
+        <span class="time-chip">Salida 19:50 → Llegada 11:30 (19 sept)</span>
+      </div>
+      <div class="route-line"><span>Nueva York (JFK)</span><span class="dash"></span><span>Buenos Aires (EZE)</span></div>
+        </div>
+      </div>      <div class="hotel-card selectable" data-fare-price="1900" onclick="selectHotel(this)">
         <div class="hotel-body" style="padding-top:18px;">
           <div class="select-row"><span class="radio-dot"></span><span class="select-text">Elegir esta opción</span></div>
           <div style="font-weight:700;font-size:14.5px;margin-bottom:2px;color:var(--navy);">American Airlines · Directo</div>
           <div class="tag-row"><span class="tag">American Airlines</span><span class="tag">Vuelo directo</span><span class="tag">Carry-on + Maleta facturada</span></div>
-      <div class="label" style="">Ida · 13 de septiembre</div>
+      <div class="label" style="">Ida · 11 de septiembre</div>
       <div class="options-row" style="margin-top:6px;">
-        <span class="time-chip">Salida 21:15 → Llegada 06:59 (14 sept)</span>
+        <span class="time-chip">Salida 21:15 → Llegada 06:59 (12 sept)</span>
       </div>
       <div class="route-line"><span>Buenos Aires (EZE)</span><span class="dash"></span><span>Nueva York (JFK)</span></div>
-      <div class="label" style="margin-top:16px;">Vuelta · 20 de septiembre</div>
+      <div class="label" style="margin-top:16px;">Vuelta · 18 de septiembre</div>
       <div class="options-row" style="margin-top:6px;">
-        <span class="time-chip">Salida 23:20 → Llegada 11:05 (21 sept)</span>
+        <span class="time-chip">Salida 23:20 → Llegada 11:05 (19 sept)</span>
       </div>
       <div class="route-line"><span>Nueva York (JFK)</span><span class="dash"></span><span>Buenos Aires (EZE)</span></div>
         </div>
@@ -241,12 +273,12 @@ p.desc{color:var(--muted);font-size:14.5px;margin:0 0 22px;max-width:640px;}
     <div class="total-box">
       <div class="total-col">
         <span class="t-label">Estimado por pasajero</span>
-        <span class="t-value" id="totalValue">USD 1.260</span>
+        <span class="t-value" id="totalValue">USD 1.250</span>
       </div>
       <div class="total-divider"></div>
       <div class="total-col">
         <span class="t-label">Total (1 pasajeros)</span>
-        <span class="t-value" id="totalGroupValue">USD 1.260</span>
+        <span class="t-value" id="totalGroupValue">USD 1.250</span>
       </div>
     </div>
   </section>
